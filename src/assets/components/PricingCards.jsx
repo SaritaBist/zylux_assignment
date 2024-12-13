@@ -46,7 +46,7 @@ const PricingCards=()=>{
                         <ul className="mt-4 space-y-2 h-[40%]">
                             {plan.features.map((feature, idx) => (
                                 <>
-                                    <li key={idx} className="text-sm  border-b border-gray-200 py-2 ">
+                                    <li key={idx} className="text-sm  last:border-b-0  border-b border-gray-200 py-2 ">
                                         {feature}
                                     </li>
 
