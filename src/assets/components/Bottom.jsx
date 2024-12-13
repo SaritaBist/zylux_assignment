@@ -1,16 +1,14 @@
 
 const BottomPage=()=>{
     return(<>
-        <div className="h-[2vh] bg-[#4338c9]"></div>
-        <div className='h-screen bg-[#ffffff]'>
-            <div className="flex flex-col justify-center items-center mt-52">
+        <div className="flex flex-col justify-center items-center ">
                 <div className="bg-green-700 rounded-full  p-6">
                     <p className="border-1 bg-white p-2 rounded-full"></p>
                 </div>
                 <div className="border-l-4 border-dotted border-green-700 py-14"></div>
-                <div className="bg-yellow-700 rounded-full  p-7">
+                <div className="bg-yellow-700 rounded-full  p-6">
                     <p className="bg-white p-4 rounded-full">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                        <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 24 24"
                              className=" text-green-700" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
                             <g id="Location_On">
                                 <g>
@@ -24,7 +22,7 @@ const BottomPage=()=>{
                     </p>
                 </div>
             </div>
-        </div>
+
     </>)
 }
 export default BottomPage

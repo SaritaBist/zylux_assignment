@@ -1,6 +1,6 @@
 import React from "react";
 import { IconArrowRight } from '@tabler/icons-react';
-import BottomPage from "./Bottom.jsx";
+
 
 const pricingPlans = [
     {
@@ -34,15 +34,15 @@ const pricingPlans = [
 
 const PricingCards=()=>{
     return(
-        <div className='w-[95%] mx-auto  absolute top-[30%] '>
-            <div className="grid  grid-cols-1  lg:grid-cols-4 gap-4">
+        <div className='mx-auto grid max-w-screen-xl grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 '>
+
                 {pricingPlans.map((plan, index) => (
                     <div
                         key={index}
-                        className="bg-white group text-gray-800 px-6 py-3 rounded-lg shadow-lg h-[90%] transition-transform hover:-translate-y-1 "
+                        className="bg-white group text-gray-800 px-6 py-5 mb-8 rounded-lg shadow-lg h-[90%] transition-transform hover:-translate-y-1 "
                     >
-                        <h2 className="text-2xl font-semibold text-[#464a95]">{plan.title}</h2>
-                        <p className="text-xl font-bold mt-4 text-[#41396e]">{plan.price}</p>
+                        <h2 className="text-2xl font-semibold text-indigo-700">{plan.title}</h2>
+                        <p className="text-2xl font-bold mt-4 text-[#41396e]">{plan.price}</p>
                         <ul className="mt-4 space-y-2 h-[40%]">
                             {plan.features.map((feature, idx) => (
                                 <>
@@ -59,16 +59,21 @@ const PricingCards=()=>{
                             )}
                         </ul>
 
-                        <button className="mt-12 px-4 py-1 rounded-lg font-bold flex gap-2 w-full  justify-center  text-[#4438ca]  group-hover:bg-[#4438ca] group-hover:text-white">
+                        <button
+                            className="mt-12 px-4 py-1 rounded-lg font-bold flex gap-1 w-full  items-center justify-center  text-[#4438ca]  group-hover:bg-indigo-700 group-hover:text-white">
                             Free Trial
-                            <IconArrowRight stroke={2} />
+                            <svg xmlns="http://www.w3.org/2000/svg" className="ml-4 h-4 w-4" fill="none"
+                                 viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                                <path strokeLinecap="round" strokeLinejoin="round"
+                                      d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                            </svg>
                         </button>
 
                     </div>
                 ))}
-            </div>
+
 
         </div>
     )
 }
-export  default PricingCards
+export default PricingCards
