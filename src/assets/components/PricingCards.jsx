@@ -1,5 +1,5 @@
 import React from "react";
-import { IconArrowRight } from '@tabler/icons-react';
+
 
 
 const pricingPlans = [
